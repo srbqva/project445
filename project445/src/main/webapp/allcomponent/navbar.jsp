@@ -57,6 +57,10 @@
 			</a></li>
 			
 			
+			<li class="nav-item active"><a class="nav-link disabled"
+				href="allcomponent/footer.jsp"> <i class="fas-fa-book-open">
+				</i> Contact us
+			</a></li>
 		
 		</ul>
 
