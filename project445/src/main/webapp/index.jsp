@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
+<%@ page import="java.sql.*" %>
 <html>
 <head>
 <meta charset="UTF-8">
@@ -92,6 +93,8 @@
 
 <br>
 <body style="background-color: #fcf7f7;">
+
+
 	<%@include file="allcomponent/navbar.jsp"%>
 	<div class="container-fluid back-image">
 		<!--Background image-->
@@ -105,7 +108,7 @@
 
 				<p
 					style="color: rgb(255, 255, 255); font-size: 20px; opacity: 50%; font-family: 'Abel';">
-					Where Everthing is possible just Sign up with us <br>and leave
+					Where Everything is possible just Sign up with us <br>and leave
 					the rest to us
 				</p>
 
@@ -162,13 +165,10 @@
 							<p>java Programming</p>
 							<p>Balguruswamy</p>
 							<p>Categories:Recent</p>
-							<div class="row">
-								<a href="" class="btn btn-danger btn-sm ml-2"><i
-									class="fa-solid fa-cart-circle-plus"> </i>Add Cart</a> <a href=""
-									class="btn btn-success btn-sm ml-1">View Details</a> <a href=""
-									class="btn btn-danger btn-sm ml-1">299</a>
-
-							</div>
+							<p>Price: $244</p>
+								<div class="row">
+									<a href="Cart.jsp" class="btn btn-danger btn-sm ml-2">Add Cart</a> 									 
+								</div>
 
 						</div>
 
@@ -186,12 +186,10 @@
 							<p>Linux</p>
 							<p>DR. PHILP</p>
 							<p>Categories:Recent</p>
-							<div class="row">
-								<a href="" class="btn btn-danger btn-sm ml-2">Add Cart</a> <a
-									href="" class="btn btn-success btn-sm ml-1">View Details</a> <a
-									href="" class="btn btn-danger btn-sm ml-1">299</a>
-
-							</div>
+							<p>Price: $99</p>
+								<div class="row">
+									<a href="Cart.jsp" class="btn btn-danger btn-sm ml-2">Add Cart</a> 									 
+								</div>
 
 						</div>
 
@@ -209,12 +207,10 @@
 							<p>SQL</p>
 							<p>ANTHONY HACK</p>
 							<p>Categories:Recent</p>
-							<div class="row">
-								<a href="" class="btn btn-danger btn-sm ml-2">Add Cart</a> <a
-									href="" class="btn btn-success btn-sm ml-1">View Details</a> <a
-									href="" class="btn btn-danger btn-sm ml-1">299</a>
-
-							</div>
+							<p>Price: $100</p>
+								<div class="row">
+									<a href="Cart.jsp" class="btn btn-danger btn-sm ml-2">Add Cart</a> 									 
+								</div>
 
 						</div>
 
@@ -231,12 +227,10 @@
 							<p>NEW YORK TIMES </p>
 							<p>Christine</p>
 							<p>Categories:Recent</p>
-							<div class="row">
-								<a href="" class="btn btn-danger btn-sm ml-2">Add Cart</a> <a
-									href="" class="btn btn-success btn-sm ml-1">View Details</a> <a
-									href="" class="btn btn-danger btn-sm ml-1">299</a>
-
-							</div>
+							<p>Price: $29</p>
+								<div class="row">
+									<a href="Cart.jsp" class="btn btn-danger btn-sm ml-2">Add Cart</a> 									 
+								</div>
 
 						</div>
 
@@ -246,10 +240,7 @@
 
 
 			</div>
-			<div class="text-center mt-1">
-				<br> <a href="" class="btn btn-danger btn-sm text-white">View
-					All</a>
-			</div>
+			
 
 		</div>
 		<br>
@@ -269,11 +260,9 @@
 								<p>The Art city</p>
 								<p>sam bill</p>
 								<p>Categories:New</p>
+								<p>Price: $288</p>
 								<div class="row">
-									<a href="" class="btn btn-danger btn-sm ml-2">Add Cart</a> <a
-										href="" class="btn btn-success btn-sm ml-1">View Details</a> <a
-										href="" class="btn btn-danger btn-sm ml-1">299</a>
-
+									<a href="Cart.jsp" class="btn btn-danger btn-sm ml-2">Add Cart</a> 									 
 								</div>
 
 							</div>
@@ -292,11 +281,9 @@
 								<p>Best New</p>
 								<p>sam bill</p>
 								<p>Categories:New</p>
+								<p>Price: $329</p>
 								<div class="row">
-									<a href="" class="btn btn-danger btn-sm ml-2">Add Cart</a> <a
-										href="" class="btn btn-success btn-sm ml-1">View Details</a> <a
-										href="" class="btn btn-danger btn-sm ml-1">299</a>
-
+									<a href="Cart.jsp" class="btn btn-danger btn-sm ml-2">Add Cart</a> 									 
 								</div>
 
 							</div>
@@ -315,11 +302,9 @@
 								<p>Be Grateful and give thanks</p>
 								<p>Dr.Salline</p>
 								<p>Categories:New</p>
+								<p>Price: $290</p>
 								<div class="row">
-									<a href="" class="btn btn-danger btn-sm ml-2">Add Cart</a> <a
-										href="" class="btn btn-success btn-sm ml-1">View Details</a> <a
-										href="" class="btn btn-danger btn-sm ml-1">299</a>
-
+									<a href="Cart.jsp" class="btn btn-danger btn-sm ml-2">Add Cart</a> 									 
 								</div>
 
 							</div>
@@ -337,11 +322,9 @@
 								<p>Place yourText here</p>
 								<p>Balguruswamy</p>
 								<p>Categories:New</p>
+								<p>Price: $299</p>
 								<div class="row">
-									<a href="" class="btn btn-danger btn-sm ml-2">Add Cart</a> <a
-										href="" class="btn btn-success btn-sm ml-1">View Details</a> <a
-										href="" class="btn btn-danger btn-sm ml-1">299</a>
-
+									<a href="Cart.jsp" class="btn btn-danger btn-sm ml-2">Add Cart</a> 									 
 								</div>
 
 							</div>
@@ -354,10 +337,7 @@
 
 
 				</div>
-				<div class="text-center mt-1">
-					<hr>
-					<a href="" class="btn btn-danger btn-sm text-white">View All</a>
-				</div>
+				
 			</div>
 			<!-- End New Book -->
 
@@ -376,13 +356,10 @@
 									<p>Music Rock</p>
 									<p>Baswamy</p>
 									<p>Categories:Old</p>
-									<div class="row">
-										<hr>
-
-						<a href="" class="btn btn-success btn-sm ml-5">View
-											Details</a> <a href="" class="btn btn-danger btn-sm ml-1">299</a>
-
-									</div>
+									<p>Price: $154</p>
+								<div class="row">
+									<a href="Cart.jsp" class="btn btn-danger btn-sm ml-2">Add Cart</a> 									 
+								</div>
 
 								</div>
 
@@ -400,11 +377,10 @@
 								<p>Black history month</p>
 									<p>Baswamy</p>
 									<p>Categories:Old</p>
-									<div class="row">
-										<a href="" class="btn btn-success btn-sm ml-5">View
-											Details</a> <a href="" class="btn btn-danger btn-sm ml-1">299</a>
-
-									</div>
+									<p>Price: $199</p>
+								<div class="row">
+									<a href="Cart.jsp" class="btn btn-danger btn-sm ml-2">Add Cart</a> 									 
+								</div>
 
 								</div>
 
@@ -422,11 +398,10 @@
 										<p>A novel</p>
 									<p>Baswamy</p>
 									<p>Categories:Old</p>
-									<div class="row">
-										<a href="" class="btn btn-success btn-sm ml-5">View
-											Details</a> <a href="" class="btn btn-danger btn-sm ml-1">299</a>
-
-									</div>
+									<p>Price: $200</p>
+								<div class="row">
+									<a href="Cart.jsp" class="btn btn-danger btn-sm ml-2">Add Cart</a> 									 
+								</div>
 
 								</div>
 
@@ -443,11 +418,10 @@
 									<p>Sample text</p>
 									<p>Baswamy</p>
 									<p>Categories:Old</p>
-									<div class="row">
-										<a href="" class="btn btn-success btn-sm ml-5">View
-											Details</a> <a href="" class="btn btn-danger btn-sm ml-1">299</a>
-
-									</div>
+									<p>Price: $122</p>
+								<div class="row">
+									<a href="Cart.jsp" class="btn btn-danger btn-sm ml-2">Add Cart</a> 									 
+								</div>
 
 								</div>
 
@@ -459,13 +433,24 @@
 
 
 					</div>
-					<div class="text-center mt-1">
-						<hr>
-						<a href="" class="btn btn-danger btn-sm text-white">View All</a>
-					</div>
+					
 				</div>
 				<br>
 				<!-- End old Book -->
+				
+				<div class="col-md-3">
+      <a href="logout.jsp"></a>
+         <div class="card">
+           <div class="card-body text-center">
+           <i class="fa-duotone fa-arrow-right-from-bracket"></i><br>       
+           <h4>Logout</h4>
+           
+           </div>  
+         </div>
+      </div>
+				
 				<%@include file="allcomponent/footer.jsp"%>
+				
+			
 </body>
 </html>

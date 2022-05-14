@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Login</title>
+<title>My Card</title>
 <%@include file="allcomponent/allCss.jsp" %>
 
 </head>
@@ -15,25 +15,30 @@
 <div class= "col-md-4 offset-md-4">
 <div class="card">
 <div class="card-body"> 
-<h3 class="text-center">Login</h3>
+<h3 class="text-center">Added to your cart, successfully!</h3>
+<h2 class="text-center">Shipping Information</h2>
 <form>
   <div class="form-group">
-    <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" 
-    aria-describedby="emailHelp" required="required" >
+    <label for="Country">Country</label>
+    <input type="text" class="form-control" id="Country" 
+    required="required" >
    
   </div>
   <div class="form-group">
-    <label for="exampleInputPassword1">Password</label>
-    <input type="password" class="form-control" 
-    id="exampleInputPassword1" required="required">
+    <label for="City">City</label>
+    <input type="text" class="form-control" 
+    id="City" required="required">
   </div>
-  
+  <div class="form-group">
+    <label for="Address">Address</label>
+    <input type="text" class="form-control" 
+    id="Address" required="required">
+  </div>
  
   
  <div class=" text-center">
-  <button type="submit" class="btn btn-primary" onclick="index.jsp">Login</button><br>
-     <a href="register.jsp">Create Account </a>
+  <button type="submit" class="btn btn-primary" onclick="Order.jsp">Next</button><br>
+     
       </div>
 </form>
 

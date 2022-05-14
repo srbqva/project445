@@ -1,15 +1,15 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Login</title>
+<meta charset="ISO-8859-1">
+<title>Admin: Login</title>
 <%@include file="allcomponent/allCss.jsp" %>
 
 </head>
 <body style ="background-color:#f0f1f2;" >
-<%@include file="allcomponent/navbar.jsp" %>
+<%@include file="anavbar.jsp" %>
 <div class="container">
 <div class="row mt-2">
 <div class= "col-md-4 offset-md-4">
@@ -32,8 +32,7 @@
  
   
  <div class=" text-center">
-  <button type="submit" class="btn btn-primary" onclick="index.jsp">Login</button><br>
-     <a href="register.jsp">Create Account </a>
+  <button type="submit" class="btn btn-primary" onclick="home.jsp">Login</button><br>
       </div>
 </form>
 

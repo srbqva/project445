@@ -20,10 +20,8 @@
 		</div>
 
 		<div class="col-md-3">
-			<a href="login.jsp" class="btn btn-success"><i
-				class="fa-solid fa-arrow-right-to-bracket"></i> Login</a> <a
-				href="register.jsp" class="btn btn-primary"><i
-				class="fa-solid fa-user-plus"></i> Register</a>
+			<a href="adminLogin.jsp" class="btn btn-success"><i
+				class="fa-solid fa-arrow-right-to-bracket"></i> Login</a> 
 		</div>
 	</div>
 </div>
@@ -41,26 +39,10 @@
 
 	<div class="collapse navbar-collapse" id="navbarSupportedContent">
 		<ul class="navbar-nav mr-auto">
-			<li class="nav-item active"><a class="nav-link" href="index.jsp">Home
+			<li class="nav-item active"><a class="nav-link" href="home.jsp">Home
 					<span class="sr-only">(current)</span>
 			</a></li>
-			<li class="nav-item active"><a class="nav-link" href="index.jsp"><i
-					class="fas-fa-book-open">
-					
-					</i> Recent Book</a></li>
-			<li class="nav-item active"> <a class="nav-link" href="index.jsp">
-			<i class="fas-fa-book-open"></i> New Book </a></li>
 			
-			<li class="nav-item active"><a class="nav-link disabled"
-				href="index.jsp"> <i class="fas-fa-book-open">
-				</i> Old Book
-			</a></li>
-			
-			
-			<li class="nav-item active"><a class="nav-link disabled"
-				href="allcomponent/footer.jsp"> <i class="fas-fa-book-open">
-				</i> Contact us
-			</a></li>
 		
 		</ul>
 

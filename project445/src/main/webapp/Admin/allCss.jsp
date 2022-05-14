@@ -24,4 +24,4 @@
 	crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
-<link rel="stylesheet" href="allcomponent/style.css">
+<link rel="stylesheet" href="style.css">
