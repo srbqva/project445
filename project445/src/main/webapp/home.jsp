@@ -37,7 +37,7 @@ color: black;
       </div>
       
       <div class="col-md-3">
-      <a href="delete_books.jsp"></a>
+      <a href="delete_books.jsp">
          <div class="card">
            <div class="card-body text-center">
            <i class="fa-solid fa-trash-can-list"></i><br>       
@@ -48,7 +48,7 @@ color: black;
       </div>
       
       <div class="col-md-3">
-      <a href="adminLogout.jsp"></a>
+      <a href="adminLogout.jsp">
          <div class="card">
            <div class="card-body text-center">
            <i class="fa-duotone fa-arrow-right-from-bracket"></i><br>       

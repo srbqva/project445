@@ -21,26 +21,26 @@
 
 <div class="form-group">
     <label for="exampleInputName1">Enter your user name:</label>
-    <input type="text" name="text1" class="form-control" id="exampleInputName1" >
+    <input type="text" name="username" class="form-control" id="exampleInputName1" onkeypress="return /[0-9a-zA-Z]/i.test(event.key)">
    
   </div>
   
   <div class="form-group">
     <label for="exampleInputPhoneNumber1">Enter your phone number:</label>
-    <input type="text" name="text2" class="form-control" id="exampleInputPhoneNumber1" required="required">
+    <input type="text" name="phone" class="form-control" id="exampleInputPhoneNumber1" required="required">
    
   </div>
   
   
   <div class="form-group">
     <label for="exampleInputEmail1">Enter your email address</label>
-    <input type="email" name="text3" class="form-control" id="exampleInputEmail1" 
+    <input type="email" name="email" class="form-control" id="exampleInputEmail1" 
     aria-describedby="emailHelp" required="required" >
    
   </div>
   <div class="form-group">
     <label for="exampleInputPassword1">Enter your password</label>
-    <input type="password" name="text4" class="form-control" 
+    <input type="password" name="password" class="form-control" 
     id="exampleInputPassword1" required="required">
   </div>
   
