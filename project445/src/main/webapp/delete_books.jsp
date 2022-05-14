@@ -4,8 +4,8 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Admin: Delete Books</title>
-<%@include file="allCss.jsp" %>
+<title>Admin:Delete Books</title>
+<%@include file="allcomponent/allCss.jsp" %>
 </head>
 <body style="background-color: #f0f2f2;">
 <%@include file="anavbar.jsp" %>

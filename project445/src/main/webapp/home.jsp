@@ -4,8 +4,8 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Admin: Home</title>
-<%@include file="allCss.jsp" %>
+<title>Admin:Home</title>
+<%@include file="allcomponent/allCss.jsp" %>
 <style type="text/css">
 a{
 text-decoration: none;

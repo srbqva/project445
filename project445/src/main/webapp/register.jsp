@@ -16,10 +16,11 @@
 				<div class="card">
 					<div class="card-body">
 					<h3 class="text-center">Create Account</h3>
-<form name="form">
+					
+<form name="loginForm" action="CreateAccount.jsp" method="POST">
 
 <div class="form-group">
-    <label for="exampleInputName1">Enter your name:</label>
+    <label for="exampleInputName1">Enter your user name:</label>
     <input type="text" name="text1" class="form-control" id="exampleInputName1" >
    
   </div>

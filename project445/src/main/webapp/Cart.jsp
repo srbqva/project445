@@ -29,10 +29,17 @@
     <input type="text" class="form-control" 
     id="City" required="required">
   </div>
+  
   <div class="form-group">
     <label for="Address">Address</label>
     <input type="text" class="form-control" 
     id="Address" required="required">
+  </div>
+  
+  <div class="form-group">
+    <label for="Card">Card Number</label>
+    <input type="text" class="form-control" 
+    id="Card" required="required">
   </div>
  
   
