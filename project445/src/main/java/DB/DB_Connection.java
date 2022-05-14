@@ -23,15 +23,18 @@ public class DB_Connection {
 		 }
 	}
 	 
-		public boolean addUser(int ID, String user, String phone, String email,String pass) {
-
-			 sqlQuery = "insert into users(ID,username,phone,email,password)values('" + ID +
-			      "','" + user+ "','" + phone + "','" + email+ "','" + pass +"');";
+		public boolean addUser(String user, String phone, String email,String pass) {
+         
+			 sqlQuery = "insert into users(username,phone,email,password, role)values((?,?,?,?)";
 			 
 			 try{
 
-			    Statement stmt = connection.createStatement();
-			    stmt.execute(sqlQuery);
+				 preparedStmt = connection.prepareStatement(sqlQuery);
+				 preparedStmt.setString(1,user);
+				 preparedStmt.setString(2, phone);
+				 preparedStmt.setString(3, email);
+				 preparedStmt.setString(4, pass);
+				 resultSet = preparedStmt.executeQuery();
 
 			 }
 			 catch(Exception e){
@@ -44,13 +47,17 @@ public class DB_Connection {
 		
 		public boolean addBook(int ID, String title, String author, int price,String category) {
 
-			 sqlQuery = "insert into books(ID,title,author,price,category)values('" + ID +
-			      "','" + title+ "','" + author + "','" + price+ "','" + category +"');";
+			 sqlQuery = "insert into books(ID,title,author,price,category) values(?,?,?,?,?)";
 			 
 			 try{
 
-			    Statement stmt = connection.createStatement();
-			    stmt.execute(sqlQuery);
+				 preparedStmt = connection.prepareStatement(sqlQuery);
+				 preparedStmt.setInt(1,ID);
+				 preparedStmt.setString(2, title);
+				 preparedStmt.setString(3, author);
+				 preparedStmt.setInt(4, price);
+				 preparedStmt.setString(5, category);
+				 resultSet = preparedStmt.executeQuery();
 
 			 }
 			 catch(Exception e){
@@ -63,13 +70,17 @@ public class DB_Connection {
 		
 		public boolean addOrder(int ID, String country, String city, String address,String card) {
 
-			 sqlQuery = "insert into order(ID,country,city,address,category)values('" + ID +
-			      "','" + country+ "','" + city + "','" + address+ "','" + card +"');";
+			 sqlQuery = "insert into order(ID,country,city,address,category)values(?,?,?,?,?)";
 			 
 			 try{
 
-			    Statement stmt = connection.createStatement();
-			    stmt.execute(sqlQuery);
+				 preparedStmt = connection.prepareStatement(sqlQuery);
+				 preparedStmt.setInt(1,ID);
+				 preparedStmt.setString(2, country);
+				 preparedStmt.setString(3, city);
+				 preparedStmt.setString(4, address);
+				 preparedStmt.setString(5, card);
+				 resultSet = preparedStmt.executeQuery();
 
 			 }
 			 catch(Exception e){
@@ -79,6 +90,27 @@ public class DB_Connection {
 			 }
 			 return true;
 		 }
+		
+		public ResultSet getUsers() {
+			 sqlQuery = "SELECT * FROM users;";
+		    try{
+			    preparedStmt = connection.prepareStatement(sqlQuery);
+			    resultSet = preparedStmt.executeQuery();
+			 }catch(SQLException e){}
+			 return resultSet;
+			 }
+		
+		public ResultSet getUser(int ID) {
+			 sqlQuery = "SELECT * FROM users WHERE ID= " + ID;
+			 try{
+				 preparedStmt = connection.prepareStatement(sqlQuery);
+				 resultSet = preparedStmt.executeQuery();
+
+			 }catch(SQLException e){
+				 System.out.println(e);
+			}
+				 return resultSet;
+		}
 		
 		public int deleteBook(String title) {
 			 sqlQuery = "Delete from books WHERE title = " + title;

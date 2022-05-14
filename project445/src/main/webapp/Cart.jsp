@@ -17,7 +17,13 @@
 <div class="card-body"> 
 <h3 class="text-center">Added to your cart, successfully!</h3>
 <h2 class="text-center">Shipping Information</h2>
-<form>
+<form name="orderForm" action="CreateOrder.jsp" method="POST">
+
+  <div class="form-group">
+    <label for="ID">ID</label>
+    <input type="number" class="form-control" id="ID" 
+    required="required" >
+
   <div class="form-group">
     <label for="Country">Country</label>
     <input type="text" class="form-control" id="Country" 

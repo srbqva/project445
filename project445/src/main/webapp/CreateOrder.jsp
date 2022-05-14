@@ -9,15 +9,16 @@
 </head>
 <body>
 <%
-  String username = request.getParameter("username");
-  String phone = request.getParameter("phone");
-  String email = request.getParameter("email");
-  String pass = request.getParameter("password");
+  String country = request.getParameter("country");
+  String city = request.getParameter("city");
+  String address = request.getParameter("address");
+  String card = request.getParameter("card");
   String ID = request.getParameter("ID");
   int id= Integer.parseInt(ID);
+
   
   DB.DB_Connection conn = new DB.DB_Connection();
-  boolean isAdded = conn.addUser( username, phone, email, pass);
+  boolean isAdded = conn.addOrder( id,country, city, address, card);
   
   if(isAdded)
      out.print("Data is successfully inserted!");

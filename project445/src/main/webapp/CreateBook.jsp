@@ -5,19 +5,21 @@
 <html>
 <head>
 <meta charset="windows-1256">
-<title>Create Account</title>
+<title>Create Book</title>
 </head>
 <body>
 <%
-  String username = request.getParameter("username");
-  String phone = request.getParameter("phone");
-  String email = request.getParameter("email");
-  String pass = request.getParameter("password");
+  String title = request.getParameter("title");
+  String author = request.getParameter("author");
+  String Price = request.getParameter("price");
+  int price= Integer.parseInt(Price);
+  String category = request.getParameter("category");
   String ID = request.getParameter("ID");
   int id= Integer.parseInt(ID);
+ 
   
   DB.DB_Connection conn = new DB.DB_Connection();
-  boolean isAdded = conn.addUser( username, phone, email, pass);
+  boolean isAdded = conn.addBook( id, title, author, price, category);
   
   if(isAdded)
      out.print("Data is successfully inserted!");

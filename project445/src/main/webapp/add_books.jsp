@@ -25,7 +25,7 @@
            
            <div class="form-group">
            <label for="bookName">Book Name</label><input
-           name="bname" type="text" class="form-control"
+           name="title" type="text" class="form-control"
            id="bookName"  >
            </div>
            

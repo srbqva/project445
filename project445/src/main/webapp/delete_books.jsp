@@ -9,6 +9,7 @@
 </head>
 
 <body style="background-color: #f0f2f2;">
+
 <%@include file="anavbar.jsp" %>
 <div class= "caontainer">
    <div class= "row">
@@ -41,19 +42,6 @@
                 alert("Successful deleted!  ");
                }
            </script>
-           <%
 
-
-        String title = request.getParameter("title");
-        
-
-        DB.DB_Connection conn = new DB.DB_Connection();
-        int isDeleted = conn.deleteBook(title);
-        if(isDeleted>0)
-            out.print("User is successfully deleted!");
-        else
-            out.print("Error");
-        conn.close();
-      %>
 </body>
 </html>
